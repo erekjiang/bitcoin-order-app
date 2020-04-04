@@ -28,7 +28,3 @@ deploy:
   local_dir: dist/bitcoin
   on:
     branch: development
-
-after_success:
- - git push origin --delete gh-pages
-
