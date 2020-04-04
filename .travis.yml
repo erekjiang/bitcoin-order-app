@@ -17,7 +17,9 @@ branches:
 before_script:
   - npm install -g @angular/cli
   - npm install -g now
+  - npm audit fix
 script:
+  - ng lint
   - ng build --prod --base-href https://erekjiang.github.io/bitcoin-order-app/
 
   
